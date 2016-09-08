@@ -50,6 +50,12 @@ const container = document.getElementById('container');
  *
  *  If the `size` is `large` the component should use the class `Box--large`.
  *  It should also use whatever inline styles are provided.
+ *
+ *  Make sure you get warnings if you provide the component with an invalid value for `size`
+ *  https://facebook.github.io/react/docs/reusable-components.html#prop-validation
+ *
+ *  Tip! pass composed strings to a component like this:
+ *  <MyComponent myProp={`Clave has ${nrOfConsultants} consultants`} />
  */
 
 // TODO Your solution here
