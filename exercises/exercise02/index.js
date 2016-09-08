@@ -27,7 +27,7 @@ const container = document.getElementById('container');
  * than we have done in the previous example.
  *
  *  ```
- *  let Hello = (props) => {
+ *  const Hello = (props) => {
  *    return <div>Hello {props.children}</div>;
  *  };
  *
@@ -44,7 +44,7 @@ const container = document.getElementById('container');
  * You may also accept any props you need for your component to render.
  *
  *  ```
- *  let OrderDetail = (props) => {
+ *  const OrderDetail = (props) => {
  *    return (
  *      <div>
  *        <div>Order Number: {props.order.number}</div>
@@ -90,7 +90,7 @@ const container = document.getElementById('container');
  * Example:
  *  
  *  ```
- *  let OrderDetail = (props) => {
+ *  const OrderDetail = (props) => {
  *    return (
  *      <div>
  *        <div>Order Number: {props.order.number}</div>

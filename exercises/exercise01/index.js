@@ -18,8 +18,8 @@ import ReactDOM from 'react-dom';
  * This is similar to the following code in JavaScript:
  *
  *  ```
- *  let component = document.createElement('div');
- *  let container = document.getElementById('container');
+ *  const component = document.createElement('div');
+ *  const container = document.getElementById('container');
  *
  *  component.innerHTML = 'This is my component';
  *  container.innerHTML = '';

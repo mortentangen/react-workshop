@@ -15,7 +15,7 @@ const container = document.getElementById('container');
  * Example:
  *
  *  ```
- *  let FormField = (props) => {
+ *  const FormField = (props) => {
  *    return (
  *      <div className="form-group">
  *        <label htmlFor={props.htmlFor}>{props.label}</label>
@@ -24,7 +24,7 @@ const container = document.getElementById('container');
  *    );
  *  };
  *
- *  let LoginForm = () => {
+ *  const LoginForm = () => {
  *    return (
  *      <form role="form" className="form">
  *        <FormField htmlFor="username" label="Username">

@@ -39,7 +39,7 @@ const container = document.getElementById('container');
  *    }
  *
  *    render() {
- *      let user = this.state.user;
+ *      const user = this.state.user;
  *      return (
  *        <div>
  *          <div>First name: ${user.firstName}</div>

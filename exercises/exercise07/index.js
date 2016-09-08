@@ -54,11 +54,11 @@ const USERS = [
  * Example:
  *  
  *  ```
- *  let Home = () => <b>Home</b>;
- *  let ProductList = () => <b>Product List</b>;
- *  let ProductDetail = (props) => <b>Product Detail (props.routeParams.productId)</b>;
+ *  const Home = () => <b>Home</b>;
+ *  const ProductList = () => <b>Product List</b>;
+ *  const ProductDetail = (props) => <b>Product Detail (props.routeParams.productId)</b>;
  *
- *  let Routes = (
+ *  const Routes = (
  *    <Router history={hashHistory}>
  *      <Route path="/" component={Home}/>
  *      <Route path="/products" component={ProductList}/>
@@ -87,7 +87,7 @@ const USERS = [
  * Example:
  *
  *  ```
- *  let ProductList = () => {
+ *  const ProductList = () => {
  *    return (
  *      <ul>
  *        <li><Link to="/product/1">Product 1</Link></li>
