@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 const container = document.getElementById('container');
 
 /**
- * As mentioned at the begining, everything in React starts with a component.
+ * As mentioned at the beginning, everything in React starts with a component.
  * Using components as the building block, we can assemble multiple
  * components together to create more complex components, or apps.
  *
