@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 const container = document.getElementById('container');
@@ -20,8 +20,6 @@ const container = document.getElementById('container');
  *      this.state = {
  *        clicks: 0
  *      };
- *
- *      this.handleButtonClick = this.handleButtonClick.bind(this);
  *    }
  *
  *    handleButtonClick() {
@@ -33,7 +31,7 @@ const container = document.getElementById('container');
  *    render() {
  *      return (
  *        <div>
- *          <button onClick={this.handleButtonClick}>Click Me!</button>
+ *          <button onClick={() => this.handleButtonClick()}>Click Me!</button>
  *          <div>Clicked {this.state.clicks} times</div>
  *        </div>
  *      );
@@ -49,17 +47,19 @@ const container = document.getElementById('container');
  * There are a handful of lifecycle methods that come into play when dealing
  * with state, such as `componentWillUpdate`, `componentDidUpdate`, etc.
  *
- * See https://facebook.github.io/react/docs/component-specs.html
+ * See https://facebook.github.io/react/docs/component-api.html
  *
  * Exercise:
  *
- *  Create a `StopWatch` component that has a Start/Stop button and a Clear
- *  button. Pressing Start will start a timer and the lapsed time in
- *  milliseconds should be displayed above the buttons. Once started the
- *  Start button should change to Stop. Clicking Stop will stop the timer
- *  but lapsed time will be preserved. Clicking Start again will resume
- *  the timer from where it left off. Clicking Clear will stop the timer
- *  if it's running and reset the lapsed time to 0.
+ *  1. Create a component, Capitals, that lists all capitals.
+ *  2. Create a component, SearchField, inside Capitals, that filters the given
+ *  list of `capitals` while typing
+ *
+ * Tip: use Array.prototype.map() and Array.prototype.filter()
  */
+
+const capitals = [
+	'Amsterdam', 'Andorra', 'Aten', 'Beograd', 'Berlin', 'Bern', 'Bratislava', 'Brussel', 'Budapest', 'București', 'Chișinău', 'Dublin', 'Helsingfors', 'Kiev', 'København', 'Lisboa', 'Ljubljana', 'London', 'Luxembourg', 'Madrid', 'Minsk', 'Monaco', 'Moskva', 'Oslo', 'Paris', 'Podgorica', 'Praha', 'Priština1', 'Reykjavík', 'Riga', 'Roma', 'San Marino', 'Sarajevo', 'Skopje', 'Sofia', 'Stockholm', 'Tallinn', 'Tirana', 'Vaduz', 'Valletta', 'Vatikanstaten', 'Vilnius', 'Warszawa', 'Wien', 'Zagreb'
+];
 
 // TODO Your solution here
