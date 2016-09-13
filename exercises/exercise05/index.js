@@ -55,7 +55,8 @@ const container = document.getElementById('container');
  *  2. Create a component, SearchField, inside Capitals, that filters the given
  *  list of `capitals` while typing
  *
- * Tip: use Array.prototype.map() and Array.prototype.filter()
+ * Tip 1: use Array.prototype.map() and Array.prototype.filter()
+ * Tip 2: https://facebook.github.io/react/docs/multiple-components.html#dynamic-children
  */
 
 const capitals = [
