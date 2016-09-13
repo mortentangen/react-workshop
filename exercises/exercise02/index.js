@@ -117,6 +117,32 @@ const container = document.getElementById('container');
  *
  * See https://facebook.github.io/react/docs/reusable-components.html#prop-validation
  *
+ *
+ * The prefered way to provide default props,
+ * and also to receive props even though you don't have defaults,
+ * is by using ES6 destructuring when receiving the props.
+ *
+ *  ```
+ *  const OrderDetail = ({order = {}, product = {}}) => {
+ *    return (
+ *      <div>
+ *        <div>Order Number: {order.number}</div>
+ *        <div>Quantity: {order.quantity</div>
+ *        <div>Order Total: {order.quantity * product.price}</div>
+ *        <div>Product: {product.name}</div>
+ *        <div><img src={product.imageUrl}/></div>
+ *      </div>
+ *    );
+ *  };
+ *
+ *  OrderDetail.propTypes = {
+ *    order: PropTypes.object,
+ *    product: PropTypes.object
+ *  };
+ *
+ *  ReactDom.render(<OrderDetail/>, container);
+ *  ```
+ *
  * Exercise:
  *
  *  Create a component that takes a user object as a prop, provides a default
