@@ -5,7 +5,7 @@ Exercises as part of a React workshop
 ## Getting started
 
 ```bash
-$ git clone https://github.com/mzabriskie/react-workshop.git
+$ git clone https://github.com/mortentangen/react-workshop.git
 $ cd react-workshop
 $ npm install
 $ npm start
