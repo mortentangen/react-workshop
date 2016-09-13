@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, {Component, PropTypes} from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 
@@ -55,7 +55,7 @@ const container = document.getElementById('container');
  *  };
  *  ```
  *
- * See https://facebook.github.io/react/docs/component-specs.html
+ * See https://facebook.github.io/react/docs/component-specs.html#lifecycle-methods
  *
  * Exercise:
  *
